@@ -1,6 +1,8 @@
 ## Meteor: Google authenticator methods
 
-This package uses 2 Npm packages: notp@2.0.3 and thirty-two@0.0.2
+This package uses 2 Npm packages:
+- notp@2.0.3
+- thirty-two@0.0.2
 
 ## Usage
 
