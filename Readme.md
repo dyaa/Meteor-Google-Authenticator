@@ -4,7 +4,7 @@ This package uses 2 Npm packages: notp@2.0.3 and thirty-two@0.0.2
 
 ## Usage
 
-Client
+### Client
 ```javascript
 var label = 'domain.com';
 
@@ -31,7 +31,7 @@ Meteor.call('verifyOtp', token, key, function(error, result) {
 });
 ```
 
-Server
+### Server
 ```javascript
 Meteor.methods({
     getOtp: function(label) {
