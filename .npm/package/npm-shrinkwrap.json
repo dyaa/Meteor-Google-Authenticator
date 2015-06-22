@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "notp": {
+      "version": "2.0.3"
+    },
+    "thirty-two": {
+      "version": "0.0.2"
+    }
+  }
+}
