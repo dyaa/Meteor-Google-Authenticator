@@ -1,6 +1,6 @@
 ## Meteor: Google authenticator methods
 
-This is a server side package only. This package does not store any data in collections. It will only create OTP's (One Time Password) and verify OTP's.
+This is a server side package only. This package does not store any data in collections. It will only create OTP's (One-time passwords) and verify OTP's.
 
 Two Npm package are used and already included:
 - notp@2.0.3
@@ -8,7 +8,7 @@ Two Npm package are used and already included:
 
 ## Usage (3 steps)
 
-\1. Setup your server methods.
+1. Setup your server methods.
 
 ### Server
 ```javascript
@@ -24,8 +24,7 @@ Meteor.methods({
 ```
 
 ### Client
-
-\2. Setup your HTML
+2. Setup your HTML
 
 ```html
 <div id="key"></div>
@@ -36,7 +35,7 @@ Meteor.methods({
 </form>
 ```
 
-\3. Setup your Javascript
+3. Setup your Javascript
 
 You can get a new OTP through a Meteor Call. Here is an example with a button with the id 'getOtp':
 
