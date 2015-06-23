@@ -1,8 +1,8 @@
 Package.describe({
     name: 'fullhdpixel:authenticator',
     summary: 'Google authenticator methods for quick integration',
-    version: '0.0.1',
-    git: 'https://github.com/fullhdpixel/Meteor-Google-Authenticator'
+    version: '0.0.2',
+    git: 'https://github.com/fullhdpixel/Google-Authenticator'
 });
 
 Package.onUse(function(api) {
