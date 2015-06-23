@@ -2,7 +2,7 @@
 
 This is a server side package only. This package does not store any data in collections. It will only create OTP's (One-time passwords) and verify OTP's.
 
-Two Npm package are used and already included:
+Two Npm packages are used and included:
 - notp@2.0.3
 - thirty-two@0.0.2
 
