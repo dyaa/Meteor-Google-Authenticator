@@ -1,17 +1,16 @@
 Package.describe({
     name: 'fullhdpixel:authenticator',
     summary: 'Google authenticator methods for quick integration',
-    version: '0.0.2',
+    version: '0.0.3',
     git: 'https://github.com/fullhdpixel/Google-Authenticator'
 });
 
 Package.onUse(function(api) {
     Npm.depends({
-        "notp": "2.0.3",
-        "thirty-two": "0.0.2"
+        'notp': '2.0.3',
+        'thirty-two': '0.0.2'
     });
 
-    api.addFiles(['authenticator.js']);
     api.addFiles(['server/authenticator.js'], 'server');
-    api.export('Authenticator');
+    api.export('Authenticator', 'server');
 });

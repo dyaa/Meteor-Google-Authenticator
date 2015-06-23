@@ -1,6 +1,8 @@
+Authenticator = {};
+
 /**
  * @param label The label which to display in the user's Google Authenticator's app.
- * @return Google Authentication Code
+ * @return result object containing both a Google Authentication Code (result.key) and a qr code image of the key (result.uri)
  **/
 Authenticator.getAuthCode = function(label) {
     var label = label || '';
@@ -15,7 +17,7 @@ Authenticator.getAuthCode = function(label) {
 
     var result = {
         'uri': uri,
-        'secret': secret
+        'key': secret
     };
     return result;
 }
@@ -31,7 +33,7 @@ Authenticator.verifyAuthCode = function(token, key) {
     var verified = otp.totp.verify(token, key);
 
     if (!verified) {
-        throw new Meteor.Error(406, 'Security code is invalid (server)');
+        throw new Meteor.Error(406, 'Security code is invalid');
     }
     return verified;
 }
