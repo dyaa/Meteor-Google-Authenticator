@@ -8,7 +8,7 @@ Two Npm package are used and already included:
 
 ## Usage (3 steps)
 
-1. Setup your server methods.
+Step 1: Setup your server methods.
 
 ### Server
 ```javascript
@@ -24,7 +24,7 @@ Meteor.methods({
 ```
 
 ### Client
-2. Setup your HTML
+Step 2: Setup your HTML
 
 ```html
 <div id="key"></div>
@@ -35,7 +35,7 @@ Meteor.methods({
 </form>
 ```
 
-3. Setup your Javascript
+Step 3: Setup your Javascript
 
 You can get a new OTP through a Meteor Call. Here is an example with a button with the id 'getOtp':
 
