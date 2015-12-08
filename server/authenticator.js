@@ -4,8 +4,9 @@ Authenticator = {};
  * @param label The label which to display in the user's Google Authenticator's app.
  * @return result object containing both a Google Authentication Code (result.key) and a qr code image of the key (result.uri)
  **/
-Authenticator.getAuthCode = function(label) {
-    var label = label || '';
+Authenticator.getAuthCode = function(label, issuer) {
+    var label = encodeURIComponent(label) || '';
+    var issuer = encodeURIComponent(issuer) || '';
     var base32 = Npm.require('thirty-two');
 
     var secret = Authenticator.createSecret();
@@ -13,7 +14,7 @@ Authenticator.getAuthCode = function(label) {
 
     var encodedForGoogle = encoded.toString().replace(/=/g, '');
 
-    var uri = 'otpauth://totp/' + label + '?secret=' + encodedForGoogle;
+    var uri = 'otpauth://totp/' + label + '?secret=' + encodedForGoogle + '&issuer=' + issuer;
 
     var result = {
         'uri': uri,
