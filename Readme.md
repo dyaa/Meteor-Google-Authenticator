@@ -15,13 +15,16 @@ Step 1: Setup your server methods.
 Meteor.methods({
     getOtp: function() {
         var label = 'domain.com';
-        return Authenticator.getAuthCode(label);
+        var issuer = 'Domain';
+        return Authenticator.getAuthCode(label, issuer);
     },
     verifyOtp: function(token, key) {
         return Authenticator.verifyAuthCode(token, key);
     }
 });
 ```
+#### Difference between Label and Issuer
+![Imgur](http://i.imgur.com/Zzj43fn.jpg)
 
 ### Client
 Step 2: Setup your HTML
