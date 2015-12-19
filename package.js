@@ -1,8 +1,8 @@
 Package.describe({
-    name: 'fullhdpixel:authenticator',
+    name: 'dyaa:authenticator',
     summary: 'Google authenticator methods for quick integration',
-    version: '0.1.2',
-    git: 'https://github.com/fullhdpixel/Google-Authenticator'
+    version: '0.1.0',
+    git: 'https://github.com/dyaa/Google-Authenticator'
 });
 
 Package.onUse(function(api) {
