@@ -8,6 +8,12 @@ Two Npm packages are used and included:
 
 ## Usage (3 steps)
 
+Step 0: Install The Package
+
+```sh
+meteor add dyaa:authenticator
+```
+
 Step 1: Setup your server methods.
 
 ### Server
@@ -74,3 +80,11 @@ Meteor.call('verifyOtp', token, key, function(error, result) {
     }
 });
 ```
+
+#### License
+
+Copyright (c) 2016 [Dyaa Eldin Moustafa][1] Licensed under the [MIT license][2].
+
+
+  [1]: https://dyaa.me/
+  [2]: https://github.com/dyaa/Meteor-Google-Authenticator/blob/master/LICENSE
